@@ -46,13 +46,17 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: resume.tex
-          
+
+      - name: Obfuscate file name
+        run: |
+          mv resume.pdf ${{ secrets.RESUME_FILE_NAME }}.pdf
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: '.'
-          
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
