@@ -72,7 +72,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      {\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -126,7 +126,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Universidad Nacional del Litoral}{Jan 2023 -- Present}
-      {Associate's Degree in Web Development}{Santa Fe, Argentina}
+      {Associate's Degree in Computer Science}{Santa Fe, Argentina}
     \resumeSubheading
       {Universidad Tecnológica Nacional}{Jan 2022 -- Jan 2023}
       {Certified Professional Full-Stack Developer}{Santa Fe, Argentina}
@@ -138,17 +138,22 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {DevOps Engineer}{Jan 2023 -- Present}
-      {Hyros -- www.hyros.com}{Remote}
+      {Hyros}{Jan 2023 -- Present}
+      {DevOps Engineer}{Remote}
       \resumeItemListStart
-        \resumeItem{Created, configured and uploaded Android and iOS apps to Play Store and App Store}
-        \resumeItem{Developed pipelines with fastlane and Ruby to build and deploy iOS apps via GitHub Actions}
-        \resumeItem{Developed pipelines to run Cypress E2E tests and compute Spring Boot apps coverage in SonarCloud}
+        \resumeItem{Created, configured and published Android and iOS apps to Play Store and App Store}
+        \resumeItem{Developed pipeline to build and deploy iOS apps with GitHub Actions and fastlane}
+        \resumeItem{Developed pipeline to run Cypress E2E tests sequentially, downloading JaCoCo reports from running AWS ECR tasks, merging reports using jacoco-cli and uploading reports to SonarCloud}
+        \resumeItem{Improved pipeline to run Cypress E2E tests in parallel, reducing +90\% of pipeline execution time}
+        \resumeItem{Set up infrastructure for web apps using Amazon Web Services (CodeBuild, EC2, ECS, ECR, RDS, S3)}
+        \resumeItem{Built a NestJS backend app in TypeScript and implemented a Slack bot, an AWS integration, a Jira integration and CRON jobs, with a MySQL relational database, using TypeORM and migrations}
+        \resumeItem{Improved the database overall security by implementing SSH tunnels for developers to connect to production and staging databases through a jumpbox with individual users and SSH keys}
+        \resumeItem{Participated in security audits, analyzing reports and fixing critical security issues}
       \resumeItemListEnd
 
     \resumeSubheading
-      {DevOps Engineer}{Oct 2022 -- Jan 2023}
-      {Nue Life Health -- www.nue.life}{Remote}
+      {Nue Life Health}{Oct 2022 -- Jan 2023}
+      {DevOps Engineer}{Remote}
       \resumeItemListStart
         \resumeItem{Created AWS CodeBuild projects and AWS ECR repositories to automate build and deploy processes}
         \resumeItem{Improved Spring Boot apps performance by migrating from Spring Scheduler to Quartz}
@@ -156,8 +161,8 @@
     \resumeItemListEnd
 
     \resumeSubheading
-      {Java Developer}{Apr 2022 -- Dec 2022}
-      {Alpha AI -- www.alphagroup.ai}{Remote}
+      {Alpha Group AI}{Apr 2022 -- Dec 2022}
+      {Java Developer}{Remote}
       \resumeItemListStart
         \resumeItem{Developed Spring Boot integration to pull data from Microsoft DynamicsGP and send as training data to Vic.Ai}
         \resumeItem{Developed the first UAT certified integration in the project}
@@ -166,8 +171,8 @@
     \resumeItemListEnd
 
     \resumeSubheading
-      {Software Developer and System Administrator}{Sept 2018 -- Sept 2021}
-      {Freelance}{Remote}
+      {Freelance}{Sept 2018 -- Sept 2021}
+      {Software Developer and System Administrator}{Remote}
       \resumeItemListStart
         \resumeItem{Installed, configured and maintained Debian GNU/Linux machines}
         \resumeItem{Service virtualisation with Docker containers}
@@ -210,10 +215,11 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, C\#, SQL, PHP, JavaScript, TypeScript, Solidity, HTML/CSS, Bash} \\
-     \textbf{Frameworks}{: Spring Boot, React, Node.js, NestJS} \\
-     \textbf{Developer Tools}{: Git, Docker, GitHub Actions, BitBucket pipelines, Amazon Web Services, VS Code, Neovim (btw), IntelliJ, Jira, Slack} \\
-     \textbf{Libraries}{: ...}
+     \textbf{Languages}{: Java, Python, C/C++, PHP, JavaScript, TypeScript, Solidity, SQL, Bash, HTML/CSS} \\
+     \textbf{Frameworks}{: Spring Boot, NestJS, CodeIgniter, Laravel} \\
+     \textbf{Developer Tools}{: Git, Docker, Node.js, GitHub Actions, BitBucket pipelines, AWS, Neovim (btw), IntelliJ} \\
+     \textbf{Management Skills/Tools}{: Slack, Jira, Scrum, Agile, Kanban} \\
+     \textbf{Libraries}{: React, web3.js, Material UI, Bootstrap}
     }}
  \end{itemize}
 
